@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="亓弋卬">
+    
+    <title>
+        
+            Hexo安装-keep主题-部署github-文档-离线版 |
+        
+        亓弋卬的文档
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo1.svg">
+    
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"zh-CN","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":true,"init_open":true},"style":{"primary_color":"#FF9900","avatar":"/images/avatar1.svg","favicon":"/images/logo1.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":true,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"虚怀若谷 厚积薄发"},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":false},"version":"3.4.2"};
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 月前","year":"%s 年前"};
+  </script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="亓弋卬的笔记" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            <a class="logo-title" href="/">
+                亓弋卬的文档
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                首页
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                归档
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                分类
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                友链
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                关于
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/unk"
+                            >
+                                因果
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">首页</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">归档</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">分类</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">友链</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">关于</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/unk">因果</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">Hexo安装-keep主题-部署github-文档-离线版</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar1.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">亓弋卬</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2021-04-14 10:23:31
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3/">帮助文档</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/hexo/">hexo</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/keep/">keep</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>5.8k 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fas fa-clock"></i>&nbsp;<span>23 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h1 id="转载声明"><a href="#转载声明" class="headerlink" title="转载声明"></a><strong>转载声明</strong></h1><p>本文档转载keep主题官方文档，稍加修改。<br><a class="link" target="_blank" rel="noopener" href="https://keep-docs.xpoet.cn/">官方文档<i class="fas fa-external-link-alt"></i></a> </p>
+<span id="more"></span>
+
+<h1 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h1><h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><ul>
+<li>新建文件夹Hexo</li>
+<li>打开Hexo文件夹，在其内部鼠标右键打开Git Bash Here 并输入以下命令。<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
+<li>初始化Hexo<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure></li>
+<li>Hexo命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo s       &#x2F;&#x2F; 启动hexo本地服务器，然后浏览器打开http:&#x2F;&#x2F;localhost:4000&#x2F;。就可以看到我们的博客。</span><br><span class="line">hexo clean   &#x2F;&#x2F; 清理缓存文件</span><br><span class="line">hexo g       &#x2F;&#x2F; 生成静态网页</span><br><span class="line">hexo d       &#x2F;&#x2F; 上传服务器</span><br><span class="line">ctrl+c       &#x2F;&#x2F; 关闭本地服务器</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h1 id="把本地Hexo部署到GitHub"><a href="#把本地Hexo部署到GitHub" class="headerlink" title="把本地Hexo部署到GitHub"></a>把本地Hexo部署到GitHub</h1><ul>
+<li>首先登陆github网页</li>
+</ul>
+<ol>
+<li>点击头像左侧加号</li>
+<li>New repository</li>
+<li>Repository name 输入：qiyiang0.github.com   //我的用户名换成你的。</li>
+<li>点击 create reapository</li>
+</ol>
+<ul>
+<li>Hexo根目录右键打开git bash，然后输入下面命令：</li>
+<li>github账号<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;qiyiang0&quot;</span><br></pre></td></tr></table></figure></li>
+<li>github邮箱<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;qiyiang0@gmail.com&quot;</span><br></pre></td></tr></table></figure></li>
+<li>生成密钥SSH key命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;qiyiang0@gmail.com&quot;</span><br></pre></td></tr></table></figure></li>
+<li>查看密钥命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure></li>
+</ul>
+<ol>
+<li>复制密钥，登陆github </li>
+<li>点击头像 </li>
+<li>settings</li>
+<li>SSH and GPG keys </li>
+<li>New SSH key </li>
+<li>Title 随便写</li>
+<li>key 粘贴SSH密钥</li>
+</ol>
+<ul>
+<li>输入命名查看是否连接成功 提示输入yes </li>
+<li>显示输出Hi qiyiang0! You’ve successfully authenticated, but GitHub does not provide shell access.代表成功</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>打开博客根目录配置文件_config.yml<br>~<br>deploy:<br>type: git<br>repository: <a class="link" target="_blank" rel="noopener" href="https://github.com/qiyiang0/qiyiang0.github.io">https://github.com/qiyiang0/qiyiang0.github.io<i class="fas fa-external-link-alt"></i></a><br>branch: master<br>~</li>
+</ul>
+<h1 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;XPoet&#x2F;hexo-theme-keep themes&#x2F;keep</span><br></pre></td></tr></table></figure>
+<h1 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h1><ul>
+<li>打开Hexo根目录_config.yml配置文件，修改主题为keep</li>
+</ul>
+<p>theme: keep</p>
+<h1 id="配置指南"><a href="#配置指南" class="headerlink" title="配置指南"></a>配置指南</h1><p>Keep 主题图文配置指南，左侧目录对应着主题配置文件 <code>_config.yml</code> 里面的配置项，方便查阅。</p>
+<h2 id="基本信息：网站标题-作者昵称-网站域名"><a href="#基本信息：网站标题-作者昵称-网站域名" class="headerlink" title="基本信息：网站标题-作者昵称-网站域名"></a>基本信息：网站标题-作者昵称-网站域名</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">base_info:</span></span><br><span class="line">  <span class="attr">title:</span> <span class="string">Keep</span> <span class="string">Theme</span></span><br><span class="line">  <span class="attr">author:</span> <span class="string">Keep</span> <span class="string">Team</span></span><br><span class="line">  <span class="attr">url:</span> </span><br></pre></td></tr></table></figure>
+
+<p>请在该配置项里<strong>正确</strong>填写你网站的基本信息。</p>
+<ul>
+<li><code>title</code> <strong>网站标题</strong>（将显示在网站头部，如下图）<br><img src="/1/keep-docs/image.76pmlbw88sg0.png" alt="image"></li>
+</ul>
+<ul>
+<li><p><code>author</code> <strong>作者昵称</strong>（将显示在网站底部和文章内容页，如下图）</p>
+<ul>
+<li>网站底部<br><img src="/1/keep-docs/image.45cn53oja6w0.png" alt="image"></li>
+<li>文章内容页<br><img src="/1/keep-docs/image.5k2nohk299w0.png" alt="image"></li>
+</ul>
+</li>
+<li><p><code>url</code> <strong>网站域名</strong>（将用于在文章内容页的版权信息模块正确拼接文章链接，如下图）<br><img src="/1/keep-docs/image.75kgwmel0140.png" alt="image"></p>
+</li>
+</ul>
+<h2 id="配置网站的基本样式"><a href="#配置网站的基本样式" class="headerlink" title="配置网站的基本样式"></a>配置网站的基本样式</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">style:</span></span><br><span class="line">  <span class="comment"># Theme primary color</span></span><br><span class="line">  <span class="attr">primary_color:</span> <span class="string">&quot;#0066CC&quot;</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Avatar (You can use local image or image external link)</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">/images/avatar.svg</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Favicon (You can use local image or image external link)</span></span><br><span class="line">  <span class="attr">favicon:</span> <span class="string">/images/logo.svg</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Article image align position, value: left | center</span></span><br><span class="line">  <span class="attr">article_img_align:</span> <span class="string">left</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Left side width</span></span><br><span class="line">  <span class="attr">left_side_width:</span> <span class="string">260px</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Content area max width</span></span><br><span class="line">  <span class="attr">content_max_width:</span> <span class="string">920px</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Mouse hover</span></span><br><span class="line">  <span class="attr">hover:</span></span><br><span class="line">    <span class="attr">shadow:</span> <span class="literal">true</span> <span class="comment"># shadow effect when the mouse hover</span></span><br><span class="line">    <span class="attr">scale:</span> <span class="literal">true</span> <span class="comment"># scale effect when the mouse hover</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># First screen</span></span><br><span class="line">  <span class="attr">first_screen:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">background_img:</span> <span class="string">/images/bg.svg</span> <span class="comment"># You can use local image or image external link</span></span><br><span class="line">    <span class="attr">description:</span> <span class="string">Keep</span> <span class="string">writing</span> <span class="string">and</span> <span class="string">Keep</span> <span class="string">loving.</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Scroll style settings</span></span><br><span class="line">  <span class="attr">scroll:</span></span><br><span class="line">    <span class="attr">progress_bar:</span></span><br><span class="line">      <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">percent:</span></span><br><span class="line">      <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p><code>style</code> 该配置项用于配置网站的基本样式。</p>
+<h3 id="设置网站主题色"><a href="#设置网站主题色" class="headerlink" title="设置网站主题色"></a>设置网站主题色</h3><p>primary_color</p>
+<p>设置网站主题色，支持 <strong>rgb</strong>、<strong>rgba</strong>、<strong>十六进制</strong>等颜色格式，例如：<code>rgb(0, 102, 204)</code>、<code>rgba(0, 102, 204, 0.8)</code>、<code>#0066cc</code>。建议使用 <a class="link" target="_blank" rel="noopener" href="https://www.bootcss.com/p/websafecolors/">Web 安全色<i class="fas fa-external-link-alt"></i></a>。</p>
+<h3 id="设置作者头像"><a href="#设置作者头像" class="headerlink" title="设置作者头像"></a>设置作者头像</h3><p>avatar</p>
+<p>设置作者头像，将显示在文章内容页，如下图。<br><img src="/1/keep-docs/image.56lx3nrzryk0.png" alt="image"><br>你可以使用<strong>本地图片</strong>（即存储 <code>keep/source/images/</code> 路径下的图片）或<strong>图片外链 URL</strong>。<br>写法参考：</p>
+<ul>
+<li>本地图片<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span> <span class="string">/images/avatar.svg</span></span><br></pre></td></tr></table></figure></li>
+<li>图片外链<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span> <span class="string">common-use/avatar.jpg</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="设置网站logo"><a href="#设置网站logo" class="headerlink" title="设置网站logo"></a>设置网站logo</h3><p>favicon</p>
+<p>设置网站 favicon 图标，你可以使用<strong>本地图片</strong>（即存储 <code>keep/source/images/</code> 路径下的图片）或<strong>图片外链 URL</strong>。<br><img src="/1/keep-docs/image.6ryeww1tcpk0.png" alt="image"></p>
+<h3 id="设置文章内容页的图片排列位置"><a href="#设置文章内容页的图片排列位置" class="headerlink" title="设置文章内容页的图片排列位置"></a>设置文章内容页的图片排列位置</h3><p>article_img_align</p>
+<p>设置文章内容页的图片排列位置，默认 <code>left</code>，可选：<code>left</code>（靠左）、<code>center</code>（居中）。</p>
+<h3 id="设置左侧目录模块的宽度"><a href="#设置左侧目录模块的宽度" class="headerlink" title="设置左侧目录模块的宽度"></a>设置左侧目录模块的宽度</h3><p>left_side_width</p>
+<p>设置左侧 <strong>TOC 目录</strong>模块的<strong>宽度</strong>。一般情况下，你无需修改。如需设置，请保持单位为 <code>px</code>。</p>
+<p><img src="/1/keep-docs/image.4zmu3thzg4w0.png" alt="image"></p>
+<h3 id="设置内容区域的最大宽度"><a href="#设置内容区域的最大宽度" class="headerlink" title="设置内容区域的最大宽度"></a>设置内容区域的最大宽度</h3><p>content_max_width</p>
+<p>设置内容区域的最大宽度。一般情况下，你无需修改。如需设置，请保持单位为 <code>px</code>。</p>
+<p><img src="/1/keep-docs/image.7inf852kzio0.png" alt="image"></p>
+<hr>
+<p><img src="/1/keep-docs/image.6zi2r32pjoo0.png" alt="image"></p>
+<h3 id="设置鼠标悬浮时的样式"><a href="#设置鼠标悬浮时的样式" class="headerlink" title="设置鼠标悬浮时的样式"></a>设置鼠标悬浮时的样式</h3><p>hover</p>
+<p>设置鼠标悬浮时的样式（主页文章块、TOC 目录块、按钮等模块），可分别开启 <code>shadow</code> 和 <code>scale</code> 效果。</p>
+<ul>
+<li><code>shadow</code> 阴影效果</li>
+<li><code>scale</code> 缩放效果</li>
+</ul>
+<h3 id="开启主题首屏"><a href="#开启主题首屏" class="headerlink" title="开启主题首屏"></a>开启主题首屏</h3><p>first_screen</p>
+<p>Keep 主题 <code>v3.0.0</code> 新增的<strong>首屏模块</strong>，开启后将显示在网站首页。</p>
+<ul>
+<li><p><code>enable</code> 是否开启首屏</p>
+</li>
+<li><p><code>background_img</code> 首屏背景图片，可使用 <strong>本地图片</strong> 或 <strong>图片外链 URL</strong></p>
+</li>
+<li><p><code>description</code> 首屏描述</p>
+</li>
+<li><p><strong>开启</strong>首屏的效果<br><img src="/1/keep-docs/image.q7zneq9q3hc.png" alt="image"></p>
+</li>
+<li><p><strong>不开启</strong>首屏的效果<br><img src="/1/keep-docs/image.56v9ujr5x000.png" alt="image"></p>
+</li>
+</ul>
+<h3 id="设置页面滚动时的样式。"><a href="#设置页面滚动时的样式。" class="headerlink" title="设置页面滚动时的样式。"></a>设置页面滚动时的样式。</h3><p>scroll</p>
+<p>设置页面滚动时的样式。</p>
+<ul>
+<li><p><code>progress_bar</code> 页面滚动时在网站<strong>顶部</strong>显示滚动<strong>进度条</strong><br><img src="/1/keep-docs/image.4wg82jblexi0.png" alt="image"></p>
+</li>
+<li><p><code>percent</code> 页面滚动时在网站<strong>右下角</strong>显示滚动<strong>百分比</strong><br><img src="/1/keep-docs/image.673tmti465c0.png" alt="image"></p>
+</li>
+</ul>
+<h2 id="设置第三方社交链接"><a href="#设置第三方社交链接" class="headerlink" title="设置第三方社交链接"></a>设置第三方社交链接</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social_contact:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">links:</span></span><br><span class="line">    <span class="attr">github:</span>               <span class="comment"># your GitHub URL</span></span><br><span class="line">    <span class="attr">weixin:</span>               <span class="comment"># your WeChat QR-Code URL</span></span><br><span class="line">    <span class="attr">qq:</span>                   <span class="comment"># your QQ QR-Code URL</span></span><br><span class="line">    <span class="attr">weibo:</span>                <span class="comment"># your WeiBo URL</span></span><br><span class="line">    <span class="attr">zhihu:</span>                <span class="comment"># your ZhiHu URL</span></span><br><span class="line">    <span class="attr">twitter:</span>              <span class="comment"># your twitter URL</span></span><br><span class="line">    <span class="attr">facebook:</span>             <span class="comment"># your facebook URL</span></span><br><span class="line">    <span class="attr">email:</span>                <span class="comment"># your email</span></span><br></pre></td></tr></table></figure>
+
+<p>设置第三方社交链接。</p>
+<p>::: warning<br>注意：<code>social_contact</code> 仅在首屏开启状态下才生效！<br>:::</p>
+<p><img src="/1/keep-docs/image.1jf3d7pzsr4w.png" alt="image"></p>
+<p>如果要<strong>更改图标</strong>或<strong>添加其他第三方链接</strong>，例如：添加 Instagram</p>
+<ol>
+<li><p>在 <a class="link" target="_blank" rel="noopener" href="https://fontawesome.com/icons?d=gallery&s=solid&m=free">Font Awesome<i class="fas fa-external-link-alt"></i></a> 搜索 Instagram 图标。<br><img src="/1/keep-docs/image.7phjq0rmu7k.png" alt="image"></p>
+</li>
+<li><p>复制图标名（如上图），添加到主题配置文件 <code>_config.yml</code> 的 <code>social_contact.links</code> 配置项里面。</p>
+</li>
+</ol>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">social_contact:</span></span><br><span class="line"><span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">links:</span></span><br><span class="line">  <span class="attr">instagram:</span> <span class="string">https://www.instagram.com/xxxxxxxx</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="/1/keep-docs/image.ns289d5ojs0.png" alt="image"></p>
+<h2 id="导航"><a href="#导航" class="headerlink" title="导航"></a>导航</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">Archives:</span> <span class="string">/archives</span></span><br><span class="line">  <span class="comment"># Categories: /categories</span></span><br><span class="line">  <span class="comment"># Tags: /tags</span></span><br><span class="line">  <span class="comment"># Links: /links</span></span><br><span class="line">  <span class="comment"># About: /about</span></span><br><span class="line">  <span class="comment"># ...</span></span><br></pre></td></tr></table></figure>
+
+<p>网站头部导航菜单，如需新增导航菜单，按上面格式填写，<strong>同时需要创建相对应的 Hexo 页面</strong>。</p>
+<p><img src="/1/keep-docs/image.2hud0hintci0.png" alt="image"></p>
+<p>Hexo 项目并没有 categories（分类）、tags（标签）、about（关于）、links（友链）等页面，需要自己手动创建。</p>
+<p>以创建「 about（关于）」页面为例：</p>
+<ol>
+<li><p>在 Hexo 项目根目录下执行命令 <code>hexo new page about</code> ，即可在 <code>source</code> 目录下生成 about 文件夹。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li><p>在 Keep 主题配置文件 <code>_config.yml</code> 的 <code>menu</code> 配置项下添加 <code>about</code>。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">Archives:</span> <span class="string">/archives</span></span><br><span class="line">  <span class="comment"># Categories: /categories</span></span><br><span class="line">  <span class="comment"># Tags: /tags</span></span><br><span class="line">  <span class="comment"># Links: /links</span></span><br><span class="line">  <span class="attr">About:</span> <span class="string">/about</span></span><br></pre></td></tr></table></figure></li>
+<li><p>打开 Hexo 项目下 <code>/source/about/index.md</code> 文件，填写 adout 页面的内容。<br>支持 Markdown 和 HTML 格式；  </p>
+<p>参考如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: about</span><br><span class="line">date: 2020-03-19 14:59:53</span><br><span class="line">comment: true</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## About me</span></span><br><span class="line"></span><br><span class="line">XPoet「 Keep core developer 」...</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>::: tip<br><code>comment: true</code> 表示该页面<strong>开启评论功能</strong>。<br>:::</p>
+<p>::: danger<br>创建页面时自动生成的 <code>title</code> 属性不要修改！不要删除！<br>例如：<code>title: about</code> 不能修改！不能删除！<br>:::</p>
+</li>
+</ol>
+<p>如果要实现在导航栏点击菜单时跳转到第三方网站，只需把配置项的值填写为第三方网站的 URL 即可。<br>例如：在头部导航栏配置跳转到 BaiDu 网站的菜单</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">BaiDu:</span> <span class="string">https://www.baidu.com/</span></span><br></pre></td></tr></table></figure>
+
+
+<h2 id="文章块底部的标签和分类信息显示"><a href="#文章块底部的标签和分类信息显示" class="headerlink" title="文章块底部的标签和分类信息显示"></a>文章块底部的标签和分类信息显示</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_article:</span></span><br><span class="line">  <span class="attr">category:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span>     <span class="comment"># show category in home page article block</span></span><br><span class="line">    <span class="attr">limit:</span> <span class="number">3</span>          <span class="comment"># max number of categories shown in home page article block</span></span><br><span class="line">  <span class="attr">tag:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span>     <span class="comment"># show tags in home page article block</span></span><br><span class="line">    <span class="attr">limit:</span> <span class="number">5</span>          <span class="comment"># max number of tags shown in home page article block</span></span><br></pre></td></tr></table></figure>
+<p>该配置项用于设置首页文章块底部的标签和分类信息显示。</p>
+<ul>
+<li><p><code>category</code> 文章分类</p>
+</li>
+<li><p><code>tag</code> 文章标签</p>
+</li>
+<li><p><code>limit</code> 限制显示的个数</p>
+</li>
+<li><p>效果图</p>
+<ul>
+<li><p>不开启效果<br><img src="/1/keep-docs/image.3zp48kt2tqw0.png" alt="image"></p>
+</li>
+<li><p>开启效果<br><img src="/1/keep-docs/image.56io4jwjkfw0.png" alt="image"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="设置是否显示文章字数统计、阅读时长和作者标识。"><a href="#设置是否显示文章字数统计、阅读时长和作者标识。" class="headerlink" title="设置是否显示文章字数统计、阅读时长和作者标识。"></a>设置是否显示<strong>文章字数统计</strong>、<strong>阅读时长</strong>和<strong>作者标识</strong>。</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post:</span></span><br><span class="line">  <span class="comment"># Post word count</span></span><br><span class="line">  <span class="comment"># Dependencies: hexo-wordcount (npm install hexo-wordcount)</span></span><br><span class="line">  <span class="comment"># See: https://github.com/willin/hexo-wordcount</span></span><br><span class="line">  <span class="attr">word_count:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">wordcount:</span> <span class="literal">false</span>  <span class="comment"># word count, one article</span></span><br><span class="line">    <span class="attr">min2read:</span> <span class="literal">false</span>   <span class="comment"># time to read, one article</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Author label</span></span><br><span class="line">  <span class="attr">author_label:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">auto:</span> <span class="literal">true</span>  <span class="comment"># if true, show Lv1, Lv2, Lv3... , If false, show custom label</span></span><br><span class="line">    <span class="comment"># label array item can be one or more</span></span><br><span class="line">    <span class="attr">custom_label_list:</span> [ <span class="string">&quot;Trainee&quot;</span>, <span class="string">&quot;Engineer&quot;</span>, <span class="string">&quot;Architect&quot;</span>, <span class="string">&quot;CTO&quot;</span>, <span class="string">&quot;BOSS&quot;</span> ]</span><br></pre></td></tr></table></figure>
+
+<p>该配置项用于设置是否显示<strong>文章字数统计</strong>、<strong>阅读时长</strong>和<strong>作者标识</strong>。</p>
+<h3 id="word-count"><a href="#word-count" class="headerlink" title="word_count"></a>word_count</h3><p>如果要开启文章字数统计和阅读时长，需在 Hexo 项目根目录下安装依赖 <strong>hexo-wordcount</strong>。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-wordcount</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>wordcount</code> 文章字数统计</li>
+<li><code>min2read</code> 文章阅读时长<br><img src="/1/keep-docs/image.4okqv7xuw220.png" alt="image"></li>
+</ul>
+<h3 id="author-label"><a href="#author-label" class="headerlink" title="author_label"></a>author_label</h3><p>设置文章内容页的<strong>作者标识</strong>，目前有两种方案：</p>
+<ol>
+<li><p><code>auto</code> 自动生成 <code>Lv1</code>、<code>Lv2</code>、<code>Lv3</code> ……，判断依据为文章数量。<br><img src="/1/keep-docs/image.66pjngqc4840.png" alt="image"></p>
+</li>
+<li><p><code>custom_label_list</code> 自定义标识列表，数组项可以 <strong>一个</strong> 或 <strong>多个</strong>，匹配的依据是按文章数量。<br><img src="/1/keep-docs/image.774ar4hhcy00.png" alt="image"></p>
+</li>
+</ol>
+<p>  格式参考：</p>
+<ul>
+<li>一个数组项 <code>[&quot;前端鼓励师&quot;]</code></li>
+<li>多个数组项 <code>[&quot;实习生&quot;, &quot;工程师&quot;, &quot;架构师&quot;]</code></li>
+</ul>
+<h2 id="代码复制功能"><a href="#代码复制功能" class="headerlink" title="代码复制功能"></a>代码复制功能</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">code_copy:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">style:</span> <span class="string">default</span>        <span class="comment"># values: default | mac</span></span><br></pre></td></tr></table></figure>
+
+<p>该配置项用于设置<strong>代码复制</strong>功能，开启后可<strong>一键复制</strong>代码到剪贴板。</p>
+<ul>
+<li><p><code>enable</code> 是否开启。</p>
+</li>
+<li><p><code>style</code> 设置开启代码复制功能后代码块的样式，可选 <code>default</code> 和 <code>mac</code>。</p>
+<ul>
+<li><p><code>default</code> 效果图<br><img src="/1/keep-docs/image.f1rj7u7jviw.png" alt="image"></p>
+</li>
+<li><p><code>mac</code> 效果图<br><img src="/1/keep-docs/image.408ijmbf0sm0.png" alt="image"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="目录功能"><a href="#目录功能" class="headerlink" title="目录功能"></a>目录功能</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Automatically add list number to toc.</span></span><br><span class="line">  <span class="attr">number:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># If true, all level of TOC in a post will be displayed, rather than the activated part of it.</span></span><br><span class="line">  <span class="attr">expand_all:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># If true, open TOC every time when you enter the article page</span></span><br><span class="line">  <span class="attr">init_open:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>该配置项用于设置文章TOC目录结构，非常实用的功能，可以快速查看文章目录结构和跳转，建议开启。</p>
+<p><img src="/1/keep-docs/image.33ussj5gbwy0.png" alt="image"></p>
+<ul>
+<li><p><code>number</code> 给目录结构自动加上数字编号</p>
+<ul>
+<li><p><code>number: false</code><br><img src="/1/keep-docs/image.1s56z1g7x8yo.png" alt="image"></p>
+</li>
+<li><p><code>number: true</code><br><img src="/1/keep-docs/image.4esu3elyz600.png" alt="image"></p>
+</li>
+</ul>
+</li>
+<li><p><code>expand_all</code> 展开所有目录结构</p>
+<ul>
+<li><code>expand_all: true</code> 自动展开所有的目录结构</li>
+<li><code>expand_all: false</code> 边滚动页面边展开对应的位置的目录</li>
+</ul>
+</li>
+<li><p><code>init_open</code> 打开文章页时是否自动打开 TOC 目录结构 </p>
+</li>
+</ul>
+<h2 id="显示文章版权信息"><a href="#显示文章版权信息" class="headerlink" title="显示文章版权信息"></a>显示文章版权信息</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">copyright_info:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>该配置项用于开启文章内容页的<strong>文章版权信息</strong>模块。</p>
+<p><img src="/1/keep-docs/image.3e6zrvfb67c0.png" alt="image"></p>
+<h2 id="设置网站计数"><a href="#设置网站计数" class="headerlink" title="设置网站计数"></a>设置网站计数</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">website_count:</span></span><br><span class="line">  <span class="comment"># busuanzi</span></span><br><span class="line">  <span class="comment"># See: http://ibruce.info/2015/04/04/busuanzi/</span></span><br><span class="line">  <span class="attr">busuanzi_count:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">site_uv:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">site_pv:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">page_pv:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>该配置项用于设置网站计数，Keep 主题内置<strong>不蒜子</strong>计数，无需额外配置，直接选择你要开启的计数项即可。</p>
+<ul>
+<li><p><code>site_uv</code> 网站访问人数（显示在底部）<br><img src="/1/keep-docs/image.28x2n6hvwdus.png" alt="image"></p>
+</li>
+<li><p><code>site_pv</code> 网站总访问量（显示在底部）<br><img src="/1/keep-docs/image.h7crdv6qqps.png" alt="image"></p>
+</li>
+<li><p><code>page_pv</code> 文章阅读次数（显示在文章内容页）<br><img src="/1/keep-docs/image.elm7a8pxd8g.png" alt="image"></p>
+</li>
+</ul>
+<h2 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preload:</span> <span class="literal">false</span>     <span class="comment"># Preload the search data when the page loads</span></span><br></pre></td></tr></table></figure>
+
+<p>该配置项用于设置网站搜索功能，非常实用，建议开启。开启后，头部导航栏右侧将出现<strong>搜索按钮</strong>。</p>
+<p><img src="/1/keep-docs/image.6qq9mg4z83w.png" alt="image"></p>
+<p>搜索功能配置流程：</p>
+<ol>
+<li><p>在 Hexo 项目根目录下安装插件 <code>hexo-generator-searchdb</code>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure></li>
+<li><p>在 Hexo 配置文件 <code>_config.yml</code> 里添加如下配置项。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Search</span></span><br><span class="line"><span class="comment">## See: https://github.com/theme-next/hexo-generator-searchdb</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.json</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">striptags</span></span><br></pre></td></tr></table></figure></li>
+<li><p>主题配置搜索 </p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span>   </span><br><span class="line">  <span class="attr">preload:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>:::<br><code>enable</code> 配置项的值设为 <code>true</code>。代表开启搜索。</p>
+<p><code>preload</code>配置项的值设为 <code>true</code>。代表开启搜索。<strong>预加载搜索数据</strong>。<br>:::</p>
+</li>
+</ol>
+<p>全站文章搜索效果图：</p>
+<p><img src="/1/keep-docs/image.1fd645r1sips.png" alt="image"></p>
+<h2 id="评论系统"><a href="#评论系统" class="headerlink" title="评论系统"></a>评论系统</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">use:</span> <span class="string">valine</span>  <span class="comment"># values: valine | gitalk | twikoo</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Valine</span></span><br><span class="line">  <span class="comment"># See: https://github.com/xCss/Valine</span></span><br><span class="line">  <span class="attr">valine:</span></span><br><span class="line">    <span class="attr">appid:</span>                <span class="comment"># your leancloud application appid</span></span><br><span class="line">    <span class="attr">appkey:</span>               <span class="comment"># your leancloud application appkey</span></span><br><span class="line">    <span class="attr">placeholder:</span>          <span class="comment"># your placeholder</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Gitalk</span></span><br><span class="line">  <span class="comment"># See: https://github.com/gitalk/gitalk</span></span><br><span class="line">  <span class="attr">gitalk:</span></span><br><span class="line">    <span class="attr">github_id:</span>             <span class="comment"># GitHub repo owner</span></span><br><span class="line">    <span class="attr">repository:</span>            <span class="comment"># Repository name to store issues</span></span><br><span class="line">    <span class="attr">client_id:</span>             <span class="comment"># GitHub Application Client ID</span></span><br><span class="line">    <span class="attr">client_secret:</span>         <span class="comment"># GitHub Application Client Secret</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Twikoo</span></span><br><span class="line">  <span class="comment"># See: https://github.com/imaegoo/twikoo</span></span><br><span class="line">  <span class="attr">twikoo:</span></span><br><span class="line">    <span class="attr">env_id:</span>                <span class="comment"># Tencent Cloud environment id</span></span><br><span class="line">    <span class="attr">region:</span>                <span class="comment"># environment region. If select Guangzhou, fill in &quot;ap-guangzhou&quot;.</span></span><br></pre></td></tr></table></figure>
+
+<p>该配置项用于开启和设置主题的评论系统。</p>
+<h3 id="use"><a href="#use" class="headerlink" title="use"></a>use</h3><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">use:</span> <span class="string">valine</span>  <span class="comment"># values: valine | gitalk | twikoo</span></span><br></pre></td></tr></table></figure>
+<p>配置使用哪款评论系统。目前主题内置 Valine、Gitalk 和 Twikoo，你可以使用其他一款。</p>
+<h3 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h3><p>Valine 诞生于 2017 年 8 月 7 日，是一款基于 LeanCloud 的快速、简洁且高效的无后端评论系统。</p>
+<p>详情查看：</p>
+<ul>
+<li><a class="link" target="_blank" rel="noopener" href="https://github.com/xCss/Valine/">https://github.com/xCss/Valine/<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://valine.js.org/">https://valine.js.org/<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<p>在 Keep 中如何使用：</p>
+<ol>
+<li><p>请先 <a class="link" target="_blank" rel="noopener" href="https://leancloud.cn/dashboard/login.html#/signin">登录<i class="fas fa-external-link-alt"></i></a> 或 <a class="link" target="_blank" rel="noopener" href="https://leancloud.cn/dashboard/login.html#/signup">注册<i class="fas fa-external-link-alt"></i></a> LeanCloud，进入控制台后点击左下角创建应用。</p>
+<p><img src="/1/keep-docs/image.1wxzxd3182v4.png" alt="image"></p>
+</li>
+<li><p>应用创建好以后，进入刚刚创建的应用，选择左下角的<code>设置</code> &gt; <code>应用Key</code>，然后就能看到你的 <code>APP ID</code> 和 <code>APP Key</code> 了。</p>
+<p><img src="/1/keep-docs/image.33nt46l951k0.png" alt="image"></p>
+</li>
+<li><p>在 Keep 主题配置文件填写必要参数信息（APP ID、APP Key 等），示例如下。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">appid:</span> <span class="string">ih2nzxxxxxxxxxxxxxxxxxxxxxx</span></span><br><span class="line">  <span class="attr">appkey:</span> <span class="string">gdf6666666666666666666666666</span></span><br><span class="line">  <span class="attr">placeholder:</span> <span class="string">😜</span> <span class="string">尽情吐槽吧~</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>appid</code> 必填。</li>
+<li><code>appkey</code> 必填。</li>
+<li><code>placeholder</code> 可填，表示评论框的在还没输入内容时的显示的信息。</li>
+</ul>
+</li>
+<li><p>Valine 评论插件效果图。</p>
+<p><img src="/1/keep-docs/image.21h91rodeq00.png" alt="image"></p>
+</li>
+</ol>
+<h3 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h3><p>Gitalk，一个基于 Github Issue 和 Preact 开发的评论插件。</p>
+<p>详情查看：</p>
+<ul>
+<li><a class="link" target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk">https://github.com/gitalk/gitalk<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://gitalk.github.io/">https://gitalk.github.io/<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<p>在 Keep 中如何使用：</p>
+<ol>
+<li><p>新建 GitHub OAuth App<br>注册或登录 <a class="link" target="_blank" rel="noopener" href="https://github.com/">GitHub<i class="fas fa-external-link-alt"></i></a>，<a class="link" target="_blank" rel="noopener" href="https://github.com/settings/applications/new">创建新的 OAuth App<i class="fas fa-external-link-alt"></i></a>，其中 <code>Homepage URL</code> 和 <code>Authorization callback URL</code> 均填写自己的域名即可。</p>
+<p>OAuth App 创建成功后，把 <code>Client ID</code> 和 <code>Client Secret</code> 保存起来，下面要用到。</p>
+<p><img src="/1/keep-docs/image.3keb5w9lgp40.png" alt="image"></p>
+</li>
+<li><p>新建 GitHub 仓库<br>注册或登录 <a class="link" target="_blank" rel="noopener" href="https://github.com/">GitHub<i class="fas fa-external-link-alt"></i></a>，<a class="link" target="_blank" rel="noopener" href="https://github.com/new">创建一个新的仓库（repository）<i class="fas fa-external-link-alt"></i></a>，并打开 Issues（自己手动增加一个 Issue，内容随便填写，即可打开），用于存储评论内容。</p>
+</li>
+<li><p>把自己的 <code>GitHub 用户名</code>、<code>仓库名</code> 、OAuth App 的 <code>Client ID</code> 、<code>Client Secret</code> 分别填写在主题配置文件里，如下示例。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">gitalk:</span></span><br><span class="line">  <span class="attr">github_id:</span> <span class="string">XPoet</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">hexo-site-comments</span></span><br><span class="line">  <span class="attr">client_id:</span> <span class="string">cdfffffffffffffffffffff</span></span><br><span class="line">  <span class="attr">client_secret:</span> <span class="string">f4b55555555555555555555555555555</span></span><br></pre></td></tr></table></figure></li>
+<li><p>Gitalk 评论插件效果图。<br><img src="/1/keep-docs/image.4bv32zei1580.png" alt="image"></p>
+</li>
+</ol>
+<h3 id="Twikoo"><a href="#Twikoo" class="headerlink" title="Twikoo"></a>Twikoo</h3><p>Twikoo，一个简洁、安全、免费的静态网站评论系统，基于腾讯云开发。</p>
+<p>详情查看：</p>
+<ul>
+<li><a class="link" target="_blank" rel="noopener" href="https://github.com/imaegoo/twikoo">https://github.com/imaegoo/twikoo<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link" target="_blank" rel="noopener" href="https://twikoo.js.org/">https://twikoo.js.org/<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+<p>在 Keep 中如何使用：</p>
+<p>如果您打算部署到一个现有的云开发环境，请直接从第 3 步开始。</p>
+<ol>
+<li>进入<a class="link" target="_blank" rel="noopener" href="https://curl.qcloud.com/KnnJtUom">云开发CloudBase<i class="fas fa-external-link-alt"></i></a>活动页面，滚动到“新用户专享”部分，选择适合的套餐（一般 0 元套餐即可），点击“立即购买”，按提示创建好环境。<br>::: tip 提示</li>
+</ol>
+<ul>
+<li>推荐创建上海环境。如选择广州环境，需配置 <code>region: ap-guangzhou</code></li>
+<li>环境名称自由填写</li>
+<li>推荐选择计费方式<code>包年包月</code>，套餐版本<code>基础班 1</code>，超出免费额度不会收费</li>
+<li>如果提示选择“应用模板”，请选择“空模板”<br>:::</li>
+</ul>
+<ol start="2">
+<li><p>进入<a class="link" target="_blank" rel="noopener" href="https://console.cloud.tencent.com/tcb/">云开发控制台<i class="fas fa-external-link-alt"></i></a><br></p>
+</li>
+<li><p>进入<a class="link" target="_blank" rel="noopener" href="https://console.cloud.tencent.com/tcb/env/login">环境-登录授权<i class="fas fa-external-link-alt"></i></a>，启用“匿名登录”</p>
+</li>
+<li><p>进入<a class="link" target="_blank" rel="noopener" href="https://console.cloud.tencent.com/tcb/env/safety">环境-安全配置<i class="fas fa-external-link-alt"></i></a>，将网站域名添加到“WEB安全域名”</p>
+</li>
+<li><p>进入<a class="link" target="_blank" rel="noopener" href="https://console.cloud.tencent.com/tcb/scf/index">环境-云函数<i class="fas fa-external-link-alt"></i></a>，点击“新建云函数”</p>
+</li>
+<li><p>函数名称请填写：<code>twikoo</code>，创建方式请选择：<code>空白函数</code>，运行环境请选择：<code>Nodejs 10.15</code>，函数内存请选择：<code>128MB</code>，点击“下一步”</p>
+</li>
+<li><p>清空输入框中的示例代码，复制以下代码、粘贴到“函数代码”输入框中，点击“确定”</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exports</span>.main = <span class="built_in">require</span>(<span class="string">&#x27;twikoo-func&#x27;</span>).main</span><br></pre></td></tr></table></figure></li>
+<li><p>创建完成后，点击“twikoo”进入云函数详情页，进入“函数代码”标签，点击“文件 - 新建文件”，输入 <code>package.json</code>，回车</p>
+</li>
+<li><p>复制以下代码、粘贴到代码框中，点击“保存并安装依赖”</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="attr">&quot;dependencies&quot;</span>: &#123; <span class="attr">&quot;twikoo-func&quot;</span>: <span class="string">&quot;1.2.0&quot;</span> &#125; &#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>在 Keep 主题配置文件里填写环境 ID <code>env_id</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">twikoo:</span></span><br><span class="line">  <span class="attr">env_id:</span> <span class="string">xxxx-xxxx..........</span></span><br><span class="line">  <span class="attr">region:</span>  </span><br></pre></td></tr></table></figure>
+
+<p>如果选择了广州环境，需把 <code>region</code> 的值填写为 <code>ap-guangzhou</code>，否则 <code>region</code> 为空即可。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">twikoo:</span></span><br><span class="line">  <span class="attr">region:</span> <span class="string">ap-guangzhou</span></span><br></pre></td></tr></table></figure></li>
+<li><p>Twikoo 评论插件效果图。</p>
+<p><img src="/1/keep-docs/image.6cstpi6jsjg0.png" alt="image"></p>
+</li>
+</ol>
+<h2 id="订阅网站"><a href="#订阅网站" class="headerlink" title="订阅网站"></a>订阅网站</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">rss:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+<p>该配置项用于开启 RSS 订阅功能。</p>
+<p>开启流程：</p>
+<ol>
+<li><p>在 Hexo 项目根目录下安装插件 <code>hexo-generator-feed</code>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed</span><br></pre></td></tr></table></figure></li>
+<li><p>在 Hexo 配置文件 <code>_config.yml</code> 增加如下配置项。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Feed Atom</span></span><br><span class="line"><span class="comment"># npm install hexo-generator-feed</span></span><br><span class="line"><span class="attr">feed:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">atom</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">atom.xml</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure></li>
+<li><p>在 Keep 主题配置文件 <code>_config.yml</code> 开启 RSS。   </p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">rss:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li><p>RSS 订阅功能开启后，将会在<strong>右下角</strong>工具按钮组里面显示<strong>RSS 按钮</strong>。</p>
+<p><img src="/1/keep-docs/image.6cmbrae6rx80.png" alt="image"></p>
+</li>
+</ol>
+<h2 id="开启图片懒加载"><a href="#开启图片懒加载" class="headerlink" title="开启图片懒加载"></a>开启图片懒加载</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lazyload:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span>  </span><br><span class="line"><span class="string">```</span>  </span><br><span class="line"><span class="string">该配置项用于开启图片懒加载。</span>  </span><br><span class="line"></span><br><span class="line"><span class="string">开启后，打开页面时不会加载所有图片，当视窗滚动到图片位置才加载对应的图片资源。</span></span><br><span class="line"></span><br><span class="line"><span class="string">效果图：</span></span><br><span class="line"><span class="type">![image](1/keep</span><span class="string">-docs/image.4xw0l2pjrbo0.png)</span></span><br><span class="line"></span><br><span class="line"><span class="string">:::</span> <span class="string">tip</span></span><br><span class="line"><span class="string">当图片过多时，开启懒加载功能，能有效提高页面加载速度！</span></span><br><span class="line"><span class="string">:::</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## cdn   </span></span><br><span class="line"></span><br><span class="line"><span class="string">```yml</span></span><br><span class="line"><span class="attr">cdn:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span>  </span><br><span class="line"><span class="string">```</span>  </span><br><span class="line"><span class="string">该配置项用于开启部分主题资源（JS</span> <span class="string">文件、字体文件等）的</span> <span class="string">CDN</span> <span class="string">加速功能。</span></span><br><span class="line"></span><br><span class="line"><span class="string">:::</span> <span class="string">tip</span> <span class="string">CDN</span> <span class="string">原理</span></span><br><span class="line"><span class="string">Keep</span> <span class="string">的</span> <span class="string">CDN</span> <span class="string">加速原理是使用</span> <span class="string">jsDelivr</span> <span class="string">来加速托管在</span> <span class="string">NPM</span> <span class="string">上的</span> [<span class="string">hexo-theme-keep</span>]<span class="string">(https://www.npmjs.com/package/hexo-theme-keep)</span> <span class="string">包的资源。</span></span><br><span class="line"><span class="string">:::</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="string">如果你的</span> <span class="string">Hexo</span> <span class="string">博客部署在</span> <span class="string">**GitHub</span> <span class="string">Pages**（服务器在国外），**建议**你开启</span> <span class="string">CDN，打开页面会有较快的加载速度。</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">JS</span> <span class="string">资源</span> <span class="string">CDN</span></span><br><span class="line">    <span class="type">![image](1/keep</span><span class="string">-docs/image.6y8hk0j82lk0.png)</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">字体文件</span> <span class="string">CDN</span></span><br><span class="line">    <span class="type">![image](1/keep</span><span class="string">-docs/image.3jfuinu7t7o0.png)</span></span><br><span class="line">  </span><br><span class="line"><span class="bullet">-</span> <span class="string">如果博客部署在</span> <span class="string">**Gitee</span> <span class="string">Pages**、**阿里云**、**腾讯云**等国内服务器，则**不建议**开启</span> <span class="string">CDN。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 开启主题的 PJAX 功能</span></span><br><span class="line"></span><br><span class="line"><span class="string">```yml</span></span><br><span class="line"><span class="attr">pjax:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span>  </span><br><span class="line"><span class="string">```</span>  </span><br><span class="line"><span class="string">该配置项用于开启主题的</span> <span class="string">PJAX</span> <span class="string">功能，带来单页应用的体验。</span></span><br><span class="line"></span><br><span class="line"><span class="string">:::</span> <span class="string">tip</span></span><br><span class="line"><span class="string">PJAX</span> <span class="string">的工作原理是通过</span> <span class="string">Ajax</span> <span class="string">从服务器获取</span> <span class="string">HTML，并用</span> <span class="string">Ajax</span> <span class="string">请求得到</span> <span class="string">HTML</span> <span class="string">替换页面上容器的内容，然后使用</span> <span class="string">pushState</span> <span class="string">更新浏览器的当前</span> <span class="string">URL，而无需重新加载页面的布局或任何资源（JS，CSS），从而提供快速，完整页面加载的外观。但实际上它只是</span> <span class="string">Ajax</span> <span class="string">和</span> <span class="string">pushState。</span></span><br><span class="line"><span class="string">:::</span></span><br><span class="line"></span><br><span class="line"><span class="string">PJAX</span> <span class="string">开启后，点击页面跳转时，网页顶部会出现彩色进度条。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 设置网站底部的信息展示</span></span><br><span class="line"></span><br><span class="line"><span class="string">```yml</span></span><br><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">since:</span> <span class="number">2020</span>      <span class="comment"># the starting year of your website, Can be null</span></span><br><span class="line">  <span class="attr">icp:</span>             <span class="comment"># ICP record number of your website, Can be null</span></span><br></pre></td></tr></table></figure>
+
+<p>该配置项用于设置网站底部的信息展示。</p>
+<ul>
+<li><code>since</code> 设置网站起始年份，可以为空。</li>
+<li><code>icp</code> 设置网站 ICP 备案编号，可以为空。</li>
+</ul>
+<p><img src="/1/keep-docs/image.hmpqgojjtk0.png" alt="image"></p>
+<h1 id="进阶使用"><a href="#进阶使用" class="headerlink" title="进阶使用"></a>进阶使用</h1><h2 id="创建页面"><a href="#创建页面" class="headerlink" title="创建页面"></a>创建页面</h2><p><strong>Hexo 项目初始状态下并没有 categories（分类）、tags（标签）、links（友链）、about（关于）等页面，需要自己手动创建。</strong></p>
+<p>以创建「about（关于）」页为例：</p>
+<ol>
+<li><p>在 Hexo 项目根目录下使用如下命令，即可创建 <code>about</code> 页面。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li><p>创建成功后，打开 Hexo 项目根目录下 <code>hexo/source/about/index.md</code> 文件，即可填写 about 页面的内容。<br>支持 Markdown 和 HTML 格式。</p>
+<p>::: tip<br><code>comment: true</code> 表示该页面开启评论功能。<br>:::</p>
+<p>参考如下示例：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: about</span><br><span class="line">date: 2020-03-19 14:59:53</span><br><span class="line">comment: true</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section"># About me</span></span><br><span class="line"></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;color: red;&quot;</span>&gt;</span></span>About me<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></li>
+<li><p>在主题配置文件 <code>_config.yml</code> 中启用 <code>about</code> 导航菜单。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">About:</span> <span class="string">/about</span></span><br><span class="line">  <span class="comment"># ...</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>其他页面的创建方式跟「about（关于）」页面类似，此处不再赘述。</p>
+<h2 id="文章顶置"><a href="#文章顶置" class="headerlink" title="文章顶置"></a>文章顶置</h2><p>要实现顶置的文章，需在文章页添加 <code>sticky</code> 属性，<code>sticky</code> 值越大，顶置的文章越靠前，参考如下。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Keep 主题使用指南</span><br><span class="line">date: 2020-04-07 21:55:14</span><br><span class="line">tags: [Hexo]</span><br><span class="line">categories: [Hexo]</span><br><span class="line">sticky: 999</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h2><p>如果要在文章中显示数学公式，可以使用插件 **<a class="link" target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-filter-mathjax/">hexo-filter-mathjax<i class="fas fa-external-link-alt"></i></a>**。  </p>
+<p>配置流程：</p>
+<ol>
+<li><p>在 Hexo 项目根目录下安装插件 <strong>hexo-filter-mathjax</strong>。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo-site</span><br><span class="line">$ npm install hexo-filter-mathjax</span><br></pre></td></tr></table></figure></li>
+<li><p>在 Hexo 配置文件 <code>_config.yml</code> 增加如下配置。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mathjax:</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">none</span>               <span class="comment"># or &#x27;ams&#x27; or &#x27;all&#x27;</span></span><br><span class="line">  <span class="attr">single_dollars:</span> <span class="literal">true</span>     <span class="comment"># enable single dollar signs as in-line math delimiters</span></span><br><span class="line">  <span class="attr">cjk_width:</span> <span class="number">0.9</span>           <span class="comment"># relative CJK char width</span></span><br><span class="line">  <span class="attr">normal_width:</span> <span class="number">0.6</span>        <span class="comment"># relative normal (monospace) width</span></span><br><span class="line">  <span class="attr">append_css:</span> <span class="literal">true</span>         <span class="comment"># add CSS to every page</span></span><br><span class="line">  <span class="attr">every_page:</span> <span class="literal">false</span>        <span class="comment"># if true, every page will be rendered by mathjax regardless the `mathjax` setting in Front-matter of each article</span></span><br></pre></td></tr></table></figure></li>
+<li><p>在文章页添加 <code>mathjax: true</code> 属性，至此，就可以在该页面中写公式了。</p>
+<p>示例：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">MathJax</span> <span class="string">Test</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2020-09-12 16:02:07</span></span><br><span class="line"><span class="attr">tags:</span> <span class="string">MathJax</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">MathJax</span></span><br><span class="line"><span class="attr">mathjax:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">$$</span></span><br><span class="line"><span class="string">i\hbar\frac&#123;\partial&#125;&#123;\partial</span> <span class="string">t&#125;\psi=-\frac&#123;\hbar^2&#125;&#123;2m&#125;\nabla^2\psi+V\psi</span></span><br><span class="line"><span class="string">$$</span></span><br></pre></td></tr></table></figure>
+
+<p>效果图：<br><img src="/1/keep-docs/image.76zdiodvgds0.png" alt="image"></p>
+</li>
+</ol>
+<h2 id="友链样式"><a href="#友链样式" class="headerlink" title="友链样式"></a>友链样式</h2><p>Keep 主题对友链（links）页面进行了样式优化，你只需按如下教程，便可得到漂亮的友链列表，如下图。</p>
+<p><img src="/1/keep-docs/image.o27c1lf5yo0.png" alt="image"></p>
+<ol>
+<li><p>创建友链（links）页面，在你的 Hexo 项目根目录下使用如下命令即可自动创建。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page links</span><br></pre></td></tr></table></figure>
+
+<p>::: warning 注意<br><code>source/links/index.md</code> 文件的 <code>title</code> 属性不要修改！<br>友链样式根据 <code>title: links</code> 来匹配！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: links</span><br><span class="line">date: 2020-05-13 14:16:07</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>:::</p>
+</li>
+<li><p>在 Keep 主题配置文件 <code>_config.yml</code> 的 <code>menu</code> 配置项里面启用 <code>links</code>。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line">  <span class="attr">Links:</span> <span class="string">/links</span></span><br><span class="line">  <span class="comment"># ......</span></span><br></pre></td></tr></table></figure></li>
+<li><p>在你的 Hexo 项目的 <code>source</code> 文件夹里增加 <code>_data</code> 文件夹。<br>::: tip<br>如果已经有了 <code>_data</code> 文件夹，则忽略这一步。<br>:::</p>
+</li>
+<li><p>在 <code>_data</code> 文件夹里新建 <code>links.yml</code> 文件。</p>
+</li>
+<li><p>在 <code>links.yml</code> 文件里按如下格式增加你的友链。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">XPoet</span></span><br><span class="line">  <span class="attr">link:</span> <span class="string">https://xpoet.cn/</span></span><br><span class="line">  <span class="attr">description:</span> <span class="string">所有命运的馈赠，早已在暗中标好价格。</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">common-use/avatar.jpg</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">不知名艺术家</span></span><br><span class="line">  <span class="attr">link:</span> <span class="string">https://jinzhanqi.com/</span></span><br><span class="line">  <span class="attr">description:</span> <span class="string">love</span> <span class="string">artist,</span> <span class="string">love</span> <span class="string">code.</span></span><br><span class="line">  <span class="attr">avatar:</span> <span class="string">https://s3.ax1x.com/2020/11/17/DVvkB4.jpg</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">-</span> <span class="string">......</span>  </span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li><p>目录结构参考。<br><img src="/1/keep-docs/image.411k8ek37x40.png" alt="image"></p>
+</li>
+</ol>
+<h2 id="平滑升级"><a href="#平滑升级" class="headerlink" title="平滑升级"></a>平滑升级</h2><p>更新 Hexo 主题时，一般都会有这样的经历：先将主题目录下的<code> _config.yml</code> 文件备份，更新完主题后，再将备份的数据复制粘贴还原回去。</p>
+<p>这个过程繁琐又浪费时间，因此我们需要一种友好的更新方式。如果你也经历着这样的痛苦，那么不妨尝试 Hexo 3.0 新增的功能 – <a class="link" target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/data-files">数据文件<i class="fas fa-external-link-alt"></i></a>。</p>
+<p>Keep 主题利用该功能实现了平滑升级的特性，使用步骤如下：<br>将主题目录下的 <code>_config.yml</code> 文件复制到博客根目录下的 <code>/source/_data/</code> 中，并重命名为 <code>keep.yml</code>。如果 <code>source</code> 目录下没有 <code>_data</code> 文件夹请自行创建。</p>
+<p><img src="/1/keep-docs/image.4qgvsy4ajt40.png" alt="image"></p>
+<p>这两个文件的关系为 <code>keep.yml</code> 覆盖 <code>_config.yml</code>，也就是说，想要修改配置时，只需要修改 <code>keep.yml</code> 里的即可（修改 <code>_config.yml</code> 里的不会生效）。这样就实现了平滑升级，更新 Keep 主题时 <code>_config.yml</code> （可能）会更新，而你的主题配置数据保留在 <code>keep.yml</code> 中。</p>
+<p>::: warning 注意<br>主题更新后，如果主题目录下的 <code>_config.yml</code> 文件里出现了新的配置项，那么你必须从该文件中将它们复制到 <code>/source/_data/keep.yml</code> 中，并设置它们的值为你想要的选项。</p>
+<p>如果你使用了平滑升级这一特性，那么 <code>/themes/keep/_config.yml</code> 和 <code>/source/_data/keep.yml</code> 这两个文件里的选项没有同步，是更新主题后，启动报错的最主要的原因！<br>:::</p>
+<p>有时候，同步 <code>/themes/keep/_config.yml</code> 和 <code>/source/_data/keep.yml</code> 两个配置文件里的内容也比较麻烦。因此，推荐使用代码对比工具进行查看，这样再进行同步就方便多了。例如 VS Code 自带的代码对比工具：<br><img src="/1/keep-docs/image.4c2gxoox3es0.png" alt="image"></p>
+<p>::: warning 特别注意<br>如果你升级了 Kepp 主题，主题配置文件 <code>_config.yml</code> 的 <code>version</code> 的值<strong>必须</strong>跟版本号保持一致！!</p>
+<p>例如：我将主题升级到 3.4.2 版本，那么主题配置文件 <code>_config.yml</code> 的 <code>version</code> 的值必须是 3.4.2 。如果你用了平滑升级，<code>/source/_data/keep.yml</code> 中的版本号需要你手动更改。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Keep version</span></span><br><span class="line"><span class="attr">version:</span> <span class="number">3.4</span><span class="number">.2</span></span><br></pre></td></tr></table></figure>
+<p>:::</p>
+<h2 id="资源压缩"><a href="#资源压缩" class="headerlink" title="资源压缩"></a>资源压缩</h2><p>Keep 主题的源码中，HTML、CSS、JavaScript、图片等资源文件是没有打包压缩的。绝大部分的 Hexo 主题也是如此。庆幸的是，可以找到相关的插件来解决这一问题。</p>
+<p>这里可以使用 <a class="link" target="_blank" rel="noopener" href="https://github.com/chenzhutian/hexo-all-minifier">hexo-all-minifier<i class="fas fa-external-link-alt"></i></a> 插件，它集成了 <code>html-minifier</code>、<code>clean-css</code>、<code>uglify</code> 和 <code>imagemin</code>，只需安装和简单的配置即可使用。</p>
+<ol>
+<li><p>在 Hexo 项目根目录下安装 <strong>hexo-all-minifier</strong>。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-all-minifier</span><br></pre></td></tr></table></figure></li>
+<li><p>在 Hexo 配置文件 <code>_config.yml</code> 文件中，添加以下配置项：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">all_minifier:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>如果你使用插件时遇到了问题或者想进行更详细的设置，请查看插件的<a class="link" target="_blank" rel="noopener" href="https://github.com/chenzhutian/hexo-all-minifier/blob/master/README.md">文档<i class="fas fa-external-link-alt"></i></a>。</p>
+</li>
+</ol>
+<h2 id="图床问题"><a href="#图床问题" class="headerlink" title="图床问题"></a>图床问题</h2><p>如果你在用 Hexo 等静态博客，正愁图片不知保存在哪里，那你可以试试 <a class="link" target="_blank" rel="noopener" href="https://github.com/XPoet/picx">PicX<i class="fas fa-external-link-alt"></i></a>。基于 GitHub API 开发的图床神器，图片外链使用 jsDelivr 进行 CDN 加速。</p>
+<p>免下载、免安装，打开网站即可直接使用。免费、稳定、高效。</p>
+<ul>
+<li><p><a class="link" target="_blank" rel="noopener" href="https://github.com/XPoet/picx">GitHub 仓库<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p><a class="link" target="_blank" rel="noopener" href="https://picx.xpoet.cn/">PicX 官网<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+</ul>
+<p>::: tip<br>觉得好用就点个 Star 支持一下 ❤️<br>:::</p>
+<h2 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h2><h3 id="Travis-CI"><a href="#Travis-CI" class="headerlink" title="Travis CI"></a>Travis CI</h3><p><a class="link" target="_blank" rel="noopener" href="https://juejin.cn/post/6943628312933564452">如何使用 Travis CI 自动部署 Hexo 博客<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="GitHub-Action"><a href="#GitHub-Action" class="headerlink" title="GitHub Action"></a>GitHub Action</h3><p><a class="link" target="_blank" rel="noopener" href="https://juejin.cn/post/6943895271751286821">如何使用 GitHub Actions 自动部署 Hexo 博客<i class="fas fa-external-link-alt"></i></a></p>
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>本文标题：Hexo安装-keep主题-部署github-文档-离线版</li>
+        <li>本文作者：亓弋卬</li>
+        <li>创建时间：2021-04-14 10:23:31</li>
+        <li>
+            本文链接：https://qiyiang0.github.io/1/
+        </li>
+        <li>
+            版权声明：本博客所有文章除特别声明外，均采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> 许可协议。转载请注明出处！
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/0/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Hexo安装-keep主题-部署github-文档</span>
+                                <span class="post-nav-item">上一篇</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+            </div>
+        
+
+        
+            <div class="comment-container">
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;评论</i>
+    </div>
+    
+
+        
+            
+    <div id="gitalk-container"></div>
+    <script data-pjax
+            src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script data-pjax>
+
+        function loadGitalk() {
+            let __gitalk__pathname = decodeURI(location.pathname);
+            const __gitalk__pathnameLength = __gitalk__pathname.length;
+            const __gitalk__pathnameMaxLength = 50;
+            if (__gitalk__pathnameLength > __gitalk__pathnameMaxLength) {
+                __gitalk__pathname = __gitalk__pathname.substring(0, __gitalk__pathnameMaxLength - 3) + '...';
+            }
+
+            try {
+                Gitalk && new Gitalk({
+                    clientID: '6b91a7c35e8528a6c837',
+                    clientSecret: '7b308684fcea7b4b56777b7a313137d4092302ed',
+                    repo: 'hexo-site-comments',
+                    owner: 'qiyiang0',
+                    admin: ['qiyiang0'],
+                    id: __gitalk__pathname,
+                    language: 'zh-CN'
+                }).render('gitalk-container');
+
+            } catch (e) {
+                window.Gitalk = null;
+            }
+        }
+
+        if ('true') {
+            const loadGitalkTimeout = setTimeout(() => {
+                loadGitalk();
+                clearTimeout(loadGitalkTimeout);
+            }, 1000);
+        } else {
+            window.addEventListener('DOMContentLoaded', loadGitalk);
+        }
+    </script>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2021</span>&nbsp;-&nbsp;
+            
+            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">亓弋卬</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        访问人数&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        总访问量&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            由 <a target="_blank" href="https://hexo.io">Hexo</a> 驱动&nbsp;|&nbsp;主题&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.2</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+            <li class="go-comment">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+            <li class="tools-item rss flex-center">
+                <a class="flex-center"
+                   href="/atom.xml"
+                   target="_blank"
+                >
+                    <i class="fas fa-rss"></i>
+                </a>
+            </li>
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BD%AC%E8%BD%BD%E5%A3%B0%E6%98%8E"><span class="nav-number">1.</span> <span class="nav-text">转载声明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85node-js"><span class="nav-number">2.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85git"><span class="nav-number">3.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">4.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%8A%E6%9C%AC%E5%9C%B0Hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="nav-number">5.</span> <span class="nav-text">把本地Hexo部署到GitHub</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98"><span class="nav-number">6.</span> <span class="nav-text">安装主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98"><span class="nav-number">7.</span> <span class="nav-text">配置主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97"><span class="nav-number">8.</span> <span class="nav-text">配置指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF%EF%BC%9A%E7%BD%91%E7%AB%99%E6%A0%87%E9%A2%98-%E4%BD%9C%E8%80%85%E6%98%B5%E7%A7%B0-%E7%BD%91%E7%AB%99%E5%9F%9F%E5%90%8D"><span class="nav-number">8.1.</span> <span class="nav-text">基本信息：网站标题-作者昵称-网站域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A0%B7%E5%BC%8F"><span class="nav-number">8.2.</span> <span class="nav-text">配置网站的基本样式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E4%B8%BB%E9%A2%98%E8%89%B2"><span class="nav-number">8.2.1.</span> <span class="nav-text">设置网站主题色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E4%BD%9C%E8%80%85%E5%A4%B4%E5%83%8F"><span class="nav-number">8.2.2.</span> <span class="nav-text">设置作者头像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99logo"><span class="nav-number">8.2.3.</span> <span class="nav-text">设置网站logo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%96%87%E7%AB%A0%E5%86%85%E5%AE%B9%E9%A1%B5%E7%9A%84%E5%9B%BE%E7%89%87%E6%8E%92%E5%88%97%E4%BD%8D%E7%BD%AE"><span class="nav-number">8.2.4.</span> <span class="nav-text">设置文章内容页的图片排列位置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%B7%A6%E4%BE%A7%E7%9B%AE%E5%BD%95%E6%A8%A1%E5%9D%97%E7%9A%84%E5%AE%BD%E5%BA%A6"><span class="nav-number">8.2.5.</span> <span class="nav-text">设置左侧目录模块的宽度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%86%85%E5%AE%B9%E5%8C%BA%E5%9F%9F%E7%9A%84%E6%9C%80%E5%A4%A7%E5%AE%BD%E5%BA%A6"><span class="nav-number">8.2.6.</span> <span class="nav-text">设置内容区域的最大宽度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E9%BC%A0%E6%A0%87%E6%82%AC%E6%B5%AE%E6%97%B6%E7%9A%84%E6%A0%B7%E5%BC%8F"><span class="nav-number">8.2.7.</span> <span class="nav-text">设置鼠标悬浮时的样式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E4%B8%BB%E9%A2%98%E9%A6%96%E5%B1%8F"><span class="nav-number">8.2.8.</span> <span class="nav-text">开启主题首屏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E6%BB%9A%E5%8A%A8%E6%97%B6%E7%9A%84%E6%A0%B7%E5%BC%8F%E3%80%82"><span class="nav-number">8.2.9.</span> <span class="nav-text">设置页面滚动时的样式。</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%AC%AC%E4%B8%89%E6%96%B9%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="nav-number">8.3.</span> <span class="nav-text">设置第三方社交链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%BC%E8%88%AA"><span class="nav-number">8.4.</span> <span class="nav-text">导航</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E5%9D%97%E5%BA%95%E9%83%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%88%86%E7%B1%BB%E4%BF%A1%E6%81%AF%E6%98%BE%E7%A4%BA"><span class="nav-number">8.5.</span> <span class="nav-text">文章块底部的标签和分类信息显示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%98%AF%E5%90%A6%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E3%80%81%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF%E5%92%8C%E4%BD%9C%E8%80%85%E6%A0%87%E8%AF%86%E3%80%82"><span class="nav-number">8.6.</span> <span class="nav-text">设置是否显示文章字数统计、阅读时长和作者标识。</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#word-count"><span class="nav-number">8.6.1.</span> <span class="nav-text">word_count</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#author-label"><span class="nav-number">8.6.2.</span> <span class="nav-text">author_label</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%A3%E7%A0%81%E5%A4%8D%E5%88%B6%E5%8A%9F%E8%83%BD"><span class="nav-number">8.7.</span> <span class="nav-text">代码复制功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD"><span class="nav-number">8.8.</span> <span class="nav-text">目录功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF"><span class="nav-number">8.9.</span> <span class="nav-text">显示文章版权信息</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E8%AE%A1%E6%95%B0"><span class="nav-number">8.10.</span> <span class="nav-text">设置网站计数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">8.11.</span> <span class="nav-text">搜索功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F"><span class="nav-number">8.12.</span> <span class="nav-text">评论系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#use"><span class="nav-number">8.12.1.</span> <span class="nav-text">use</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Valine"><span class="nav-number">8.12.2.</span> <span class="nav-text">Valine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Gitalk"><span class="nav-number">8.12.3.</span> <span class="nav-text">Gitalk</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Twikoo"><span class="nav-number">8.12.4.</span> <span class="nav-text">Twikoo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A2%E9%98%85%E7%BD%91%E7%AB%99"><span class="nav-number">8.13.</span> <span class="nav-text">订阅网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="nav-number">8.14.</span> <span class="nav-text">开启图片懒加载</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8"><span class="nav-number">9.</span> <span class="nav-text">进阶使用</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E9%A1%B5%E9%9D%A2"><span class="nav-number">9.1.</span> <span class="nav-text">创建页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E9%A1%B6%E7%BD%AE"><span class="nav-number">9.2.</span> <span class="nav-text">文章顶置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="nav-number">9.3.</span> <span class="nav-text">数学公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%8B%E9%93%BE%E6%A0%B7%E5%BC%8F"><span class="nav-number">9.4.</span> <span class="nav-text">友链样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B3%E6%BB%91%E5%8D%87%E7%BA%A7"><span class="nav-number">9.5.</span> <span class="nav-text">平滑升级</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B5%84%E6%BA%90%E5%8E%8B%E7%BC%A9"><span class="nav-number">9.6.</span> <span class="nav-text">资源压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E5%BA%8A%E9%97%AE%E9%A2%98"><span class="nav-number">9.7.</span> <span class="nav-text">图床问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2"><span class="nav-number">9.8.</span> <span class="nav-text">自动部署</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Travis-CI"><span class="nav-number">9.8.1.</span> <span class="nav-text">Travis CI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub-Action"><span class="nav-number">9.8.2.</span> <span class="nav-text">GitHub Action</span></a></li></ol></li></ol></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="搜索..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/dark-light-toggle.js"></script>
+
+
+
+    
+<script src="/js/local-search.js"></script>
+
+
+
+
+    
+<script src="/js/code-copy.js"></script>
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+        
+<script src="/js/left-side-toggle.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+<script src="/js/toc.js"></script>
+
+    
+</div>
+
+
+    
+<script src="/js/libs/pjax.min.js"></script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
